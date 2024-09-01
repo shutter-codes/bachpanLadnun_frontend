@@ -16,7 +16,7 @@ const ADfDataGetForAllStudent = () => {
 
     const downloadCSV = () => {
         const headers = ['Class', 'First Name', 'Last Name', 'Date of Birth', 'Gender', 'Email', 'Mobile No', 'Mother\'s Name', 'Father\'s Name', 'Address', 'Description'];
-        const rows = adfdata.map(item => [
+        const rows = adfdata ? adfdata.map(item => [
             item.admissionClass,
             item.firstName,
             item.lastName,
@@ -28,7 +28,7 @@ const ADfDataGetForAllStudent = () => {
             item.father_name,
             item.address,
             item.description,
-        ]);
+        ]) : [];
 
         let csvContent = "data:text/csv;charset=utf-8," 
             + [headers, ...rows].map(e => e.join(",")).join("\n");
@@ -69,7 +69,7 @@ const ADfDataGetForAllStudent = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {adfdata.map(item => (
+                        {adfdata && adfdata.map(item => (
                             <tr key={item._id}>
                                 <td data-label="Class">{item.admissionClass}</td>
                                 <td data-label="First Name">{item.firstName}</td>
