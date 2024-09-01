@@ -1,0 +1,91 @@
+.sch-icon.text-danger {
+    color: #e74c3c;
+    /* Red */
+}
+
+.sch-icon.text-success {
+    color: #2ecc71;
+    /* Green */
+}
+
+.sch-icon.text-primary {
+    color: #3498db;
+    /* Blue */
+}
+
+.sch-icon.text-purple {
+    color: #9b59b6;
+    /* Purple */
+}
+
+.sch-icon.text-orange {
+    color: #e67e22;
+    /* Orange */
+}
+
+.sch-icon.text-teal {
+    color: #1abc9c;
+    /* Teal */
+}
+
+.bg-orange {
+    background-color: #e67e22 !important;
+    /* Orange */
+}
+
+.text-info {
+    color: #00aced !important;
+    /* Light Blue */
+}
+
+.text-warning {
+    color: #f39c12 !important;
+    /* Yellow */
+}
+
+.text-danger {
+    color: #e74c3c !important;
+    /* Red */
+}
+
+.text-secondary {
+    color: #7f8c8d !important;
+    /* Grey */
+}
+
+.text-dark {
+    color: #2c3e50 !important;
+    /* Dark Grey */
+}
+
+#schclani {
+    font-family: 'Pacifico', cursive;
+
+    font-weight: bold;
+    animation: flyInLeft 1s ease-out both;
+}
+
+.text-primary {
+    color: #3498db !important;
+    /* Blue */
+}
+
+.sch-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* Make sure icon container takes full height */
+}
+
+.bg-light.rounded-circle {
+    display: flex;
+    align-items: center;
+    /* Center icon vertically */
+    justify-content: center;
+    /* Center icon horizontally */
+    height: 128px;
+    /* Adjust height as needed */
+    width: 128px;
+    /* Adjust width as needed */
+}

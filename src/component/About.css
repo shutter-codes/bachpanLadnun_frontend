@@ -1,0 +1,39 @@
+/* Define keyframes for the flying animation */
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the .animated-title class */
+.animated-title {
+    animation: flyIn 2s ease-out;
+}
+
+/* Default style for #ewrt */
+#ewrt {
+    margin-right: 25vmax;
+}
+
+/* Media query for screens less than 768px wide */
+@media (max-width: 768px) {
+    #ewrt {
+        margin-right: 15vmax;
+    }
+}
+
+/* Media query for screens less than 576px wide */
+@media (max-width: 576px) {
+    #ewrt {
+        margin-right: 70vmax;
+    }
+}

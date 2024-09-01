@@ -1,0 +1,11 @@
+marquee {
+    background-color: #f8f9fa; /* Optional background color for the marquee */
+    padding: 10px; /* Optional padding */
+}
+
+marquee p {
+    color: red; /* Text color */
+    margin: 0;
+    font-size: 1rem; /* Font size */
+    white-space: nowrap; /* Ensures the text does not wrap */
+}

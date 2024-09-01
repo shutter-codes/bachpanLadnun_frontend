@@ -1,0 +1,133 @@
+/* Thought.css */
+
+/* Style for the container holding all thought boxes */
+.thought-box-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the container */
+}
+
+/* Flexbox container for aligning thought boxes horizontally */
+.thought-box {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Space between thought boxes */
+    justify-content: center; /* Center the items horizontally */
+}
+
+/* Individual thought box styling */
+.thought-box-item {
+    background-color: #ffffff; /* White background for each thought box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px); /* Responsive layout: two items per row with spacing */
+    box-sizing: border-box;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 300px; /* Ensure minimum width */
+}
+
+/* Position and style for the image */
+.thought-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Larger size for the image */
+    height: 100px; /* Larger size for the image */
+    overflow: hidden;
+    border-radius: 50%; /* Make the image round */
+}
+
+.thought-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    transition: transform 0.3s ease;
+}
+
+/* Style for the content below the image */
+.thought-content {
+    margin-top: 120px; /* Adjust based on the image height */
+    padding: 10px;
+    position: relative;
+}
+
+/* Font styling for Mission and Vision */
+.thought-content h2 {
+    font-family: 'Roboto', sans-serif; /* Change to a new sans-serif font for titles */
+    font-size: 26px; /* Slightly larger font size */
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.thought-content p {
+    font-family: 'Helvetica', sans-serif; /* Change to a modern sans-serif font for the body text */
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Keyframes for animation */
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the .animated-title class */
+.animated-title {
+    animation: flyIn 2s ease-out;
+}
+
+/* Hover effect for text elements */
+.thought-content h2:hover,
+.thought-content p:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+
+.thought-content h3 {
+    font-family: 'Helvetica', sans-serif; /* Keep font consistent with body text */
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Highlighted signature */
+.thought-content .highlighted-signature {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b2ebf2; /* Light blue border */
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Hover effect for the thought box */
+.thought-box-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thought-box-item:hover .thought-image img {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+    .thought-box-item {
+        flex: 1 1 100%; /* Single item per row on small screens */
+    }
+}

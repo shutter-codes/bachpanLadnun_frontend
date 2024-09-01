@@ -1,0 +1,189 @@
+/* Container for the whole form */
+.paragraph {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+/* Container for the form and logo */
+.form1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Full width for responsiveness */
+    max-width: 35rem; /* Maximum width */
+    margin: auto; /* Center the form horizontally */
+    background-color: aliceblue; /* Background color of the form */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Shadow effect */
+    padding: 2rem; /* Padding around the form content */
+    border-radius: 8px; /* Rounded corners */
+    max-height: 90vh; /* Ensure form stays within viewport height */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+/* Logo and header styling */
+.logo190 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem; /* Reduced margin */
+    margin-right:7vmax;
+}
+
+.logo190>img {
+    width: 8rem; /* Size of logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo190>h2 {
+    margin: 0.5rem 0; /* Margin around heading */
+}
+
+.line1 {
+    border-bottom: 1px solid green;
+    height: 2px; /* Thinner line */
+    width: 100%; /* Full width */
+    margin: 1rem auto; /* Center and space out line */
+}
+
+/* Form field styling */
+.names {
+    margin-bottom: 1rem; /* Reduced gap between fields */
+}
+
+.names p {
+    margin-bottom: 0.5rem; /* Margin for label text */
+    font-size: 1.25rem; /* Slightly larger font size */
+}
+
+/* Select box styling */
+select {
+    width: 100%;
+    padding: 0.5rem;
+    height: 2.5rem; /* Height for select box */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+/* Input field styling */
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
+    width: 100%;
+    height: 2.5rem; /* Consistent height for input fields */
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 5rem; /* Height for textarea */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing only */
+    box-sizing: border-box; /* Include padding and border in total width and height */
+}
+
+/* Button styling */
+.animated-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .logo190 {
+        flex-direction: column;
+        margin-bottom: 1rem; 
+        margin-left: 8vmax;
+        
+    }
+
+    .logo190>img {
+        width: 7rem; /* Adjusted logo size */
+    }
+
+    .logo190>h2 {
+        margin: 0.5rem 0;
+    }
+
+    .names, .input, .msg {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea {
+        height: 2rem; /* Adjusted height for smaller screens */
+    }
+
+    textarea {
+        height: 4rem; /* Adjusted height for smaller screens */
+    }
+
+    .animated-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .logo190 {
+        flex-direction: column;
+        margin-bottom: 1rem; 
+        margin-left: 1vmax;
+        
+    }
+
+    .logo190>img {
+        width: 7rem; /* Adjusted logo size */
+    }
+
+    .logo190>h2 {
+        margin: 0.5rem 0;
+    }
+
+    .names, .input, .msg {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea {
+        height: 2rem; /* Adjusted height for smaller screens */
+    }
+
+    textarea {
+        height: 4rem; /* Adjusted height for smaller screens */
+    }
+
+    .animated-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+

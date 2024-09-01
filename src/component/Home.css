@@ -1,0 +1,54 @@
+.Home-page {
+    /* Sets the background color */
+    background-color: #f4f4f4; /* Light gray as an example, adjust as needed */
+    /* Sets the background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    background-position: center; /* Centers the background image */
+}
+
+/* Optionally, you can add specific styles for different sections */
+.carousel-section {
+    /* Background color for carousel */
+    background-color: #ffffff; /* White background */
+}
+
+.faculty-section {
+    /* Background color for faculty section */
+    background-color: #e0e0e0; /* Light gray background */
+}
+
+.schoolclasses-section {
+    /* Background color for school classes section */
+    background-color: #ffffff; /* White background */
+}
+
+.contact-us-section {
+    /* Background color for contact us section */
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+/* Add padding to sections if necessary */
+.section {
+    padding: 20px 0; /* Top and bottom padding for sections */
+}
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the .animated-title class */
+.animated-title {
+    animation: flyIn 2s ease-out;
+}

@@ -1,0 +1,5 @@
+export const All_VIDATA_REQUEST = "ALL_VIDATA_REQUEST";
+export const All_VIDATA_SUCESS = "ALL_VIDATA_SUCESS";
+export const All_VIDATA_FAIL = "ALL_VIDATA_FAIL";
+
+export const CLEAR_ERROR = "CLEAR_ERROR";

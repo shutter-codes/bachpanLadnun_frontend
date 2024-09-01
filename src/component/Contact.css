@@ -1,0 +1,59 @@
+a{
+    text-decoration: none;
+    color: rgb(242, 23, 23);
+}
+.carousel-slide {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10; /* Ensure content is above the image */
+    padding: 20px;
+    
+    border-radius: 10px; /* Optional: rounded corners for the background */
+}
+
+.carousel-content h1 {
+    margin-bottom: 20px;
+}
+
+.carousel-content p {
+    margin-bottom: 20px;
+}
+
+.carousel-content a {
+    margin: 5px;
+}
+/* Define keyframes for the flying animation */
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the .animated-title class */
+.animated-title {
+    animation: flyIn 2s ease-out;
+}
+

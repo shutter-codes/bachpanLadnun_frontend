@@ -1,0 +1,96 @@
+/* Navbar Styles */
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef); /* Gradient background */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-authentic {
+    font-size: 1.75rem; /* Larger font size for emphasis */
+    color: #e74c3c; /* Red color for text */
+    font-family: 'Georgia', serif; /* Authentic and classic font */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-link {
+    font-size: 1rem;
+    color: #333; /* Dark color for text */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+    color: #007bff; /* Primary color on hover */
+}
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown-item, .download-button {
+    font-size: 1rem; /* Ensure font size consistency */
+    color: #333; /* Dark color for text */
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    text-decoration: none; /* Remove underline from links */
+    border: none; /* Remove border */
+    background: none; /* No background for links */
+    display: block; /* Make sure links occupy full width */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.dropdown-item:hover, .download-button:hover {
+    background-color: #f8f9fa; /* Background color on hover */
+    color: #007bff; /* Color on hover */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .text-authentic {
+        font-size: 1.5rem; /* Adjust font size for medium screens */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.875rem;
+    }
+
+    .btn-primary {
+        display: none; /* Hide button on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .text-authentic {
+        font-size: 1.25rem; /* Adjust font size for small screens */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+}

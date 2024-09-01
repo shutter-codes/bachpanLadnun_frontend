@@ -1,0 +1,179 @@
+.paragraph{
+    margin-top: 3%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+
+.para2{
+    padding: 3%;
+    margin-top: 20%;
+    font-family: serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+
+.form{
+    margin: 3%;
+    border-radius: 25% 10%;
+    box-shadow: 10px -5px 10px rgb(8, 14, 14);
+    background-color: rgba(16, 16, 223, 0.1);
+    width: 31%;
+    height: 12%;
+    padding: 4%
+}
+
+.heading{
+    font-family: serif;
+    color: white;
+}
+
+input{
+    background-color: whitesmoke;
+    border: none;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.grades{
+    font-family: serif;
+    background-color: rgb(179, 206, 215);
+}
+
+.selectClass{
+    font-family: serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#admissionClass{
+    font-family: serif;
+    background-color: rgb(179, 206, 215);
+    margin-left: 35%;
+    width: 35%;
+    margin-top: 1%;
+    padding: 2%;
+    background-color: rgb(203, 203, 99);
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.names{
+    color: white;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    font-family: serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inputname{
+    font-family: serif;
+    padding: 7%;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.emnum{
+    color: white;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 16%;
+}
+
+.name2{
+    font-family: serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inputname2{
+    font-family: serif;
+    padding: 7%;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.msg{
+    color: white;
+    font-family: serif;
+    margin-left: 0.1%;
+}
+
+.msg p{
+    font-family: serif;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 9%;
+}
+
+.msg textarea{
+    font-family: serif;
+    margin-top: 2%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* button{
+    margin-left: 27%;
+    padding: 4%;
+    width: 39%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+} */
+
+.animated-button {
+    font-weight: bold;
+    font-family: serif;
+    margin-left: 35%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .animated-button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+  }
+
+  .animated-button:active {
+    background-color: black;
+    transform: scale(0.95);
+  }
+
+img{
+    margin-left: 35%;
+    
+}

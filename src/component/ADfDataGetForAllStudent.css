@@ -1,0 +1,59 @@
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.adfadf{
+    font-family: 'Pacifico', cursive; 
+    animation: flyInLeft 1s ease-out both;
+}
+/* Additional CSS for Download Button */
+.download-btn {
+    font-size: 2rem; /* Size of the icon */
+    color: wheat;
+    background-color: gray;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-btn:hover {
+    background-color: orangered;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Border between cells */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Table Styles */
+.table-wrapper {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on touch devices */
+}
+
+/* Optional: Hide columns on very small screens if needed */
+

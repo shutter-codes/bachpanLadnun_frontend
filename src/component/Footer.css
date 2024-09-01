@@ -1,0 +1,144 @@
+/* General Styles */
+.btn-social {
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+.footer .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+#cont {
+    margin-top: -2vmax;
+}
+#gphot1{
+    margin-right: 2vmax;
+}
+.quick-links .btn-link {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+    gap: 10px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.quick-links .btn-link i {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.quick-links .btn-link:hover {
+    text-decoration: none;
+}
+
+#cont {
+    margin-top: -2vmax;
+}
+
+.footer-icon {
+    margin-right: 8px;
+    color: #3498db; /* Matching the color to the rest */
+}
+
+.fly-in {
+    animation: flyIn 1s ease-out both;
+}
+
+/* Fly in animation */
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .footer .col-lg-3 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Ensure all elements are centered in the footer on small screens */
+@media (max-width: 768px) {
+    .footer h3,
+    .footer p {
+        text-align: center;
+    }
+
+    .footer .d-flex {
+        justify-content: center; /* Center social icons */
+    }
+
+    .footer .btn-social {
+        margin: 0 5px; /* Adjust spacing between social icons */
+    }
+    
+    /* Center the image gallery and adjust image sizes */
+    #gphot {
+        text-align: center;
+    }
+
+    #gphot1 {
+        justify-content: center;
+    }
+
+    #gphot1 .col-4 {
+        flex: 1 0 33%; /* Adjust the width of images in the gallery */
+        max-width: 33%;
+    }
+
+    /* Center text and adjust padding for mobile view */
+    .footer p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer h3,
+    .footer p {
+        font-size: 20px; /* Adjust font size for very small screens */
+    }
+    .btn-social {
+        margin: 0.10px; /* Adjust the value as needed for spacing between icons */
+        transition: all 0.3s ease;
+    }
+
+    .footer .d-flex {
+        flex-direction: row; /* Stack social icons vertically */
+        transition: all 0.3s ease;
+        
+
+    }
+    #sdfdg{
+        margin: 1vmax;
+    }
+
+    .footer .btn-social {
+        margin: 5px 0; /* Adjust margin between stacked social icons */
+        transition: all 0.3s ease;
+        
+    }
+
+    /* Adjust image sizes for very small screens */
+    #gphot1{
+        margin-right: 6vmax;
+    }
+    #gphot1 .col-4 {
+        max-width: 40%;
+    }
+
+    .footer p {
+        font-size: 12px; /* Further adjust font size for very small screens */
+    }
+}

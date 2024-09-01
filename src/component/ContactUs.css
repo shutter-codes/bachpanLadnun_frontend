@@ -1,0 +1,36 @@
+#img2 {
+    min-height: 300px;
+    margin-right: 20px;
+    width: 33vmax;
+}
+
+#img2 img {
+    object-fit: cover;
+}
+#conbutton1{
+    color: black;
+    width: 4vmax;
+    background:orangered;
+}
+#conmak{
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    animation: flyInLeft 1s ease-out both;
+}
+@media (max-width: 500px) {
+    
+    #img2{
+        margin-right: 20vmax;
+        width: 50vmax;
+    }
+    #img div img{
+        margin-right: 10vmax;
+    }
+    .conbutton{
+        margin-bottom: 7vmax;
+    }
+
+    #conbutton1 {
+        width: 8vmax;
+    }
+}
