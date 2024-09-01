@@ -114,7 +114,7 @@ function AdmissionForm() {
                                 value={admissionClass}
                                 onChange={handleInputChange}
                             >
-                                <option className='grades' value="">Admission for</option>
+                                <option className='grades' value="">Select Class</option>
                                 <option className='grades' value="Playgroup">Playgroup</option>
                                 <option className='grades' value="Nursery">Nursery</option>
                                 <option className='grades' value="LKG">LKG</option>
