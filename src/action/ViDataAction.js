@@ -6,7 +6,7 @@ export const ViDataGetAction = () => {
         try {
             dispatch({ type: All_VIDATA_REQUEST });
             
-            const { data } = await axios.get(`/api/v1/VI/get`);
+            const { data } = await axios.get(`https://bachpanladnunbackend.up.railway.app/api/v1/VI/get`);
             dispatch({ type: All_VIDATA_SUCESS, payload: data });
         } catch (error) {
             dispatch({ type: All_VIDATA_FAIL, payload: error.message });

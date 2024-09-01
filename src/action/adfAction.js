@@ -9,7 +9,7 @@ export const admissionFomeDetail = (admissionClass, firstName, lastName, dob, ge
 
             const config = { headers: { "content-type": "application/json" } };
 
-            const { data } = await axios.post(`/api/v1/adf/new`, { admissionClass, firstName, lastName, dob, gender, email, mobileNo, mother_name, father_name, address, description }, config);
+            const { data } = await axios.post(`https://bachpanladnunbackend.up.railway.app/api/v1/adf/new`, { admissionClass, firstName, lastName, dob, gender, email, mobileNo, mother_name, father_name, address, description }, config);
 
             dispatch({ type: ALL_ADFDATA_SUCESS, payload: data });
 
@@ -26,7 +26,7 @@ export const admissionFomeDetailGet = () => {
         try {
             dispatch({ type: ALL_ADFDATA_GET_REQUEST });
 
-            const { data } = await axios.get(`/api/v1/adf/fome/details`);
+            const { data } = await axios.get(`https://bachpanladnunbackend.up.railway.app/api/v1/adf/fome/details`);
             dispatch({ type: ALL_ADFDATA_GET_SUCESS, payload: data });
         } catch (error) {
             dispatch({ type: ALL_ADFDATA_GET_FAIL, payload: error.message });

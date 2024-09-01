@@ -8,7 +8,7 @@ export const viFomeDataUploadAction = (image,description,year) => {
 
             const config ={headers:{"content-type":"application/json"}};
 
-            const {data} = await axios.post(`/api/v1/video/upload`, {image,description,year},config);
+            const {data} = await axios.post(`https://bachpanladnunbackend.up.railway.app/api/v1/video/upload`, {image,description,year},config);
 
             dispatch({type:All_VIFOMEDATAUPLOAD_SUCESS, payload:data});
 
